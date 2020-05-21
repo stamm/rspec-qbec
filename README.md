@@ -23,4 +23,8 @@ end
   it 'have size' do
     expect(namespaces.size).to eq(1)
   end
+
+  it 'have name' do
+    expect(namespaces.metadata.name).to eq('myns')
+  end
 ```
