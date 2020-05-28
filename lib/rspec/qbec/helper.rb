@@ -6,6 +6,7 @@ require 'tmpdir'
 
 module RSpec
   module Qbec
+    # Helpers for run and parse qbec output
     module Helpers
       def run(cmd)
         Open3.capture3(cmd)
