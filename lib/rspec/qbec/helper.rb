@@ -54,7 +54,7 @@ module RSpec
       def write_file(str)
         file_path = ''
         loop do
-          file_path = Dir.tmpdir + "/qbec_#{DateTime.now.strftime('%Q')}"
+          file_path = Dir.tmpdir + "/qbec_#{DateTime.now.strftime('%Q')}.yml"
           break unless File.exist?(file_path)
         end
         File.open(file_path, 'w') { |file| file.write(str) }
